@@ -1,0 +1,47 @@
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+.vscode/
+.idea/
+*.swp
+
+# Data
+data/raw/
+data/processed/
+data/external/
+*.dcm
+*.nii
+*.nii.gz
+*.h5
+*.hdf5
+
+# Model artifacts
+checkpoints/
+runs/
+wandb/
+mlruns/
+*.pt
+*.pth
+*.onnx
+*.ckpt
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+
+# Env
+.env
+.env.local
