@@ -1,11 +1,10 @@
 # Examples
 
-- `smoke_train.py` — synthetic two-class smoke test that exercises every
-  module (datasets, preprocess, augment, metrics) without requiring torch.
+- `smoke_train.py` - synthetic two-class smoke test
+- Fundus segmentation notebook (coming soon)
 
-Run it after installing the package:
-
+Run:
 ```bash
-pip install -e .
+pip install -e ".[torch]"
 python examples/smoke_train.py
 ```
