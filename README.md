@@ -14,11 +14,21 @@ read in an afternoon and remix in a notebook.
 | Module                | Purpose                                                       |
 | --------------------- | ------------------------------------------------------------- |
 | `medsight.preprocess` | Grayscale conversion, min-max normalize, histogram equalize   |
-| `medsight.datasets`   | `ImageFolderDataset` over class-per-folder image directories  |
-| `medsight.augment`    | Numpy-only flips, brightness jitter, rotation, `Compose`      |
+| `medsight.preprocess_enhanced` | Adaptive equalization, Gaussian/median denoising        |
+| `medsight.datasets`   | `ImageFolderDataset`, DICOM series, NIfTI volume, CSV loader  |
+| `medsight.augment`    | Numpy-only flips, brightness jitter, rotation, Compose        |
+| `medsight.augment_advanced` | Random rotation, crop, cutout                            |
 | `medsight.metrics`    | Binary classification, Dice, IoU                              |
-| `medsight.config`     | Frozen-dataclass experiment configs loaded from YAML          |
-| `medsight.cli`        | `medsight inspect` and `medsight validate-config`             |
+| `medsight.eval_`      | Confusion matrix, per-class metrics, ROC AUC                  |
+| `medsight.losses`     | DiceLoss, FocalLoss, DiceBCELoss                              |
+| `medsight.models`     | SimpleCNN, ResNet wrapper, UNet                               |
+| `medsight.training`   | Trainer, LR schedulers, EarlyStopping, ModelCheckpoint        |
+| `medsight.config`     | Frozen-dataclass experiment configs from YAML                 |
+| `medsight.visualize`  | Overlay mask, image montage                                   |
+| `medsight.inference`  | Model loading and prediction                                  |
+| `medsight.split`      | Dataset splitting (train/val/test)                            |
+| `medsight.crossval`   | K-fold cross-validation with stratification                   |
+| `medsight.cli`        | `medsight inspect`, `validate-config`, `dicom-info`           |
 
 ## Install
 
